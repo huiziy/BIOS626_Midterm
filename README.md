@@ -74,7 +74,7 @@ Initially, the leaderboard performance of the binary classifier was very poor (0
 
 ### Baseline Algorithm 
 
-We used XGBoost for the baseline algorithm. We used 3-fold cross validation to tune a range of hyperparameters including gamma, subsample proportion and maximum deepth. Each hyperparameter is randomly sampled from their corresponding distribution (random search) and then evaluated on the out-of-bag (OOB) sample and the validation set. We ran the algorithm 100 times and the following table prints a subset of hyperparameter tuning results. Notice the algorithm performs better on the OOB set compared to the validation set, which contains individuals that are not included in the training process. After the random search is complete, we use these hyperparameters and train a XGBoost model on the entire training data. We use the model to predict the hold-out test set. However, when submitted to the leaderboard, this algorithm didnot perform very well and only achieved a 0.945 accuracy on the testing set.
+We used XGBoost for the baseline algorithm. We used 3-fold cross validation to tune a range of hyperparameters including gamma, subsample proportion and maximum deepth. Each hyperparameter is randomly sampled from their corresponding distribution (random search) and then evaluated on the out-of-bag (OOB) sample and the validation set. We ran the algorithm 100 times and the following table prints a subset of hyperparameter tuning results. Notice the algorithm performs better on the OOB set compared to the validation set, which contains individuals that are not included in the training process. After the random search is complete, we use these hyperparameters and train a XGBoost model on the entire training data. We use the model to predict the hold-out test set. When submitted to the leaderboard, this algorithm didnot perform okay and only achieved a 0.945 accuracy on the testing set. This has led us to believe that perhaps the tuning leds to overfitting issues.
 
 | max_depth | eta  | gamma | subsample | colsample_bytree | min_child_weight | max_delta_step | Accuracy_OOB | Accuracy_Validation |
 | --------- | ---- | ----- | --------- | ---------------- | ---------------- | -------------- | ------------ | ------------------- |
@@ -97,6 +97,7 @@ We find the optimal combination to be:
 
 ### Final Algorithm 
 
+The algorithm that achieved the best performance (0.959) is a SVM model with linear kernel. For this model, we did not perform any additional hyperparameter tuning. The overall accuracy on the testing set was XXXX. 
 
 ## Leaderboard Performance
 
