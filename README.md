@@ -12,10 +12,10 @@ For this project, we will built classifiers to predict participants' activities 
 
 | Variables               | Training     | Testing |
 |-------------------------|--------------|---------|
-| No. Observations        | 7767         | 3162    |
-| No. Participants        | 21           | 9       |
-| No. Variables           | 563          | 562     |
-| Activities Distribution |              |         |
+| **No. Observations**        | 7767         | 3162    |
+| **No. Participants**        | 21           | 9       |
+| **No. Variables**           | 563          | 562     |
+| **Activities Distribution** |              |         |
 |    1 WALKING            | 1226 (15.8%) |         |
 |    2 WALKING_UPSTAIRS   | 1073 (13.8%) |         |
 |    3 WALKING_DOWNSTAIRS | 987 (12.7%)  |         |
