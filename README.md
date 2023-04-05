@@ -39,9 +39,18 @@ To avoid overfitting, we split the training data into two: training and validati
 
 ### Baseline Algorithm 
 
+For the baseline algorithm, we used a generalized linear model (GLM) with the binary activity as the outcome and all the motion capture variables as the predictors. We did not conduct any variable pre-processing because we want to evaluate the baseline before any additional data pre-processing. We trained the data on the training set and evaluate the results using the validation set. The confusion matrix of the validation data is shown below. 
+
+|               | Reference = 0 | Reference = 1 |
+|---------------|---------------|---------------|
+| Predicted = 0 | 1399          | 4             |
+| Predicted = 1 | 0             | 1002          |
+
+As we observe the simple GLM method performed exceptionally well. The overall accuracy is 0.99 with sensitivity 1 and specificity 0.99. This results shows that the model is effective in predicting the static and dynamic acticity apart. 
 
 ### Final Algorithm 
 
+### Discussion
 
 ## Multi-class Classification 
 
