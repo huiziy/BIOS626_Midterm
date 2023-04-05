@@ -54,6 +54,10 @@ As we observe the simple GLM method performed exceptionally well. The overall ac
 
 ### Final Algorithm 
 
+Although the GLM model demonstrated good performance, we wanted to experiment with other models that might (1) conduct implicit variable selection (2) consider complex variable interactions. Since the motion sensor data is high dimentional and complex, it is unlikely for us to consider all possible variable transformations and interactions. We decided to use train an artificial neural network model. For the neural network, we use the keras and tensorflow package in python.
+
+We specify the neural network model to include two layers, both with relu activiation function. The output layer will use sigmoid activiation fuction to ouput a probability between 0 and 1. We also specify the optimizer to be adam and the loss is binary_crossentropy. We will use accuracy as the metric for optimizing the model because the two classes are balanced. 
+
 ### Challenges
 
 Initially, the leaderboard performance of the binary classifier was very poor (0.50 in the first submission), despite the high accuracy demonstrated in the validation (> 0.99). We were not able to identify the issue until we finally figured out that the outcome definition was incorrect. Previously, we only classified the postural transitions as 1 and the rest as 0. The definition mistake caused the classifier to be trained inapproriately, leading to sub-par performance in the hold-out test set. 
