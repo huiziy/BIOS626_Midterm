@@ -1,5 +1,9 @@
 # BIOS626_Midterm
 
+## UID: mm0507
+## Final Binary Accuracy: 1.0
+## Final Multiclass Accuracy: 0.959
+
 ## Project Description 
 ### Objective
 
@@ -50,7 +54,9 @@ As we observe the simple GLM method performed exceptionally well. The overall ac
 
 ### Final Algorithm 
 
-### Discussion
+### Challenges
+
+Initially, the leaderboard performance of the binary classifier was very poor (0.50 in the first submission), despite the high accuracy demonstrated in the validation (> 0.99). We were not able to identify the issue until we finally figured out that the outcome definition was incorrect. Previously, we only classified the postural transitions as 1 and the rest as 0. The definition mistake caused the classifier to be trained inapproriately, leading to sub-par performance in the hold-out test set. 
 
 ## Multi-class Classification 
 
