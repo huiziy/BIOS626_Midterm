@@ -43,8 +43,8 @@ For the baseline algorithm, we used a generalized linear model (GLM) with the bi
 
 |               | Reference = 0 | Reference = 1 |
 |---------------|---------------|---------------|
-| Predicted = 0 | 1399          | 4             |
-| Predicted = 1 | 0             | 1002          |
+| **Predicted = 0** | 1399          | 4             |
+| **Predicted = 1** | 0             | 1002          |
 
 As we observe the simple GLM method performed exceptionally well. The overall accuracy is 0.99 with sensitivity 1 and specificity 0.99. This results shows that the model is effective in predicting the static and dynamic acticity apart. 
 
