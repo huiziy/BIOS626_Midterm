@@ -28,11 +28,6 @@ For this project, we will built classifiers to predict participants' activities 
 |   10 LIE_TO_SIT         | 60 (0.8%)    |         |
 |   11 STAND_TO_LIE       | 90 (1.2%)    |         |
 |         12 LIE_TO_STAND | 57 (0.7%)    |         |
-|                         |              |         |
-|                         |              |         |
-|                         |              |         |
-|                         |              |         |
-|                         |              |         |
 
 
 ## Train Test Split and Cross Validation
