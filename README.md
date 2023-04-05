@@ -1,8 +1,8 @@
 # BIOS626_Midterm
 
-## UID: mm0507
-## Final Binary Accuracy: 1.0
-## Final Multiclass Accuracy: 0.959
+### UID: mm0507
+### Final Binary Accuracy: 1.0
+### Final Multiclass Accuracy: 0.959
 
 ## Project Description 
 ### Objective
