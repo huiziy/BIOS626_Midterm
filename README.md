@@ -29,8 +29,11 @@ For this project, we will built classifiers to predict participants' activities 
 |   11 STAND_TO_LIE       | 90 (1.2%)    |         |
 |         12 LIE_TO_STAND | 57 (0.7%)    |         |
 
+There are 21 participants in the training data and 9 in the testing data. We note that the participants in the training set do not appear in the testing set. Each participants have multiple observations of their movement trajectories during the experiment. The majority of the activites are either static or dynamic activities and only a small portion is the postural transitions (< 5%). 
 
 ## Train Test Split and Cross Validation
+
+To avoid overfitting, we split the training data into two: training and validation. Because we want to model to perform well for predicting the activities of completely unknown individuals, we split the training data by ID: those with ID less than 23 were placed in the training set and the rest are in validation. We also tuned the hyperparameters of models using out-of-bag samples and cross validation. Addtional details will be provided in the section below. 
 
 ## Binary Classification 
 
