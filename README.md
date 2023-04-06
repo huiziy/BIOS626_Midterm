@@ -97,7 +97,8 @@ We find the optimal combination to be:
 
 ### Final Algorithm 
 
-The algorithm that achieved the best performance (0.959) is a SVM model with linear kernel. For this model, we did not perform any additional hyperparameter tuning. The overall accuracy on the testing set was XXXX. 
+The algorithm that achieved the best performance (0.959) is a SVM model with linear kernel. For this model, we did not perform any additional hyperparameter tuning. The overall accuracy on the testing set was 0.953. The tuning parameter C was set to 1. Next, we check the performance by activity. We found that the performance for activity 3 and 4 are slightly worse compared to other activities. 
+
 
 ## Leaderboard Performance
 
