@@ -125,3 +125,9 @@ I made three submissions for the multiclass classification, the final prediction
 ![Leaderboard Performance](performance.png)
 
 ## Conclusion & Future Work
+
+My final accuracy for the binary task is 1, which I am very happy with. This means the model is able to prefectly predict whether the activity is static or dynamic. The accuracy for the multi-class task is 0.959, which is also decently high. I have accomplished this through a detailed investigation of the hyperparameters tuning and model selection. 
+
+For future work, I could try additional models such as random forest and AdaBoost to evaluate their performance. I could also conduct a more detailed variable selection process and find the variables that are most correlated with predicting the activity outcome. 
+
+
