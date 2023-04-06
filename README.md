@@ -102,5 +102,6 @@ The algorithm that achieved the best performance (0.959) is a SVM model with lin
 
 ## Leaderboard Performance
 
+![Performance by Activity](tuning.jpeg)
 
 ## Conclusion & Future Work
