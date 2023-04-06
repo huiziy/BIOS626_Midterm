@@ -111,6 +111,17 @@ The algorithm that achieved the best performance (0.959) is a SVM model with lin
 
 ## Leaderboard Performance
 
+I made two submissions for the binary classification task, the second reached 100% accuracy. What I have done to improve performance:
+
+- Clarified the definition of the outcome variable
+- Utilized a more complex model to account for variable selection and interaction
+
+I made three submissions for the multiclass classification, the final prediction accuracy is 95.9%. What I have done to improve performance:
+
+- Considered complex models such as XGBoost and SVM
+- Conducted hyperparameter tuning with random selection
+- Utilized train/test split and cross validation to ensure model does not overfit
+
 ![Leaderboard Performance](performance.png)
 
 ## Conclusion & Future Work
